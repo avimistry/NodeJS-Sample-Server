@@ -1,0 +1,20 @@
+version: "2"
+services:
+  mongodb:
+    container_name: MongoDB
+    build: MongoDB/
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo/data:/data/db
+  nodejs:
+    container_name: NodeJS
+    restart: always
+    build: NodeJS/
+    command: npm start server.js
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
