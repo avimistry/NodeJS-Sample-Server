@@ -53,7 +53,7 @@ app.all('/*', function(req, res, next) {
 //app.all('/api/v1/*', [require('./middlewares/validateRequest')]);
 
 
-glob.sync( './app/routes/**/*.js' ).forEach( function( routePath ) {
+glob.sync( './routes/**/*.js' ).forEach( function( routePath ) {
   // skip middlewares as it is not a routese
   if( routePath.indexOf("middlewares") == -1)
   {

@@ -1,5 +1,5 @@
 var nodemailer = require('nodemailer');
-var config = require('../../config'); // get our config file
+var config = require('../config'); // get our config file
 var fs = require('fs');
 var path  = require("path");
 

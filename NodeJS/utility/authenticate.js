@@ -1,5 +1,5 @@
 var mongoose        = require('mongoose'),
-    config          = require('../../config'),
+    config          = require('../config'),
     authUser        = require('../models/authentication.model'),
     jwt             = require('jsonwebtoken') // used to create, sign, and verify tokens
     errorTrans      = require('./errorTranslator')

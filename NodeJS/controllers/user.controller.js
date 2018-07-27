@@ -2,7 +2,7 @@
 
 var User          = require('../models/user.model'),
     AuthUser        = require('../models/authentication.model'),
-    config        = require('../../config'),
+    config        = require('../config'),
     errorTrans    = require('../utility/errorTranslator'),
     mailer        = require('../utility/mailer'),
     _               = require('lodash')
@@ -186,7 +186,7 @@ User.find({isDeleted: false})
       }
       totalUserCount = totalcount;
       req.log.info('Get All Users!');
-      return res.status(200).json({success:true, adminusers:docs, totalusercount:totalUserCount});
+      return res.status(200).json({success:true, users:docs, totalusercount:totalUserCount});
     });
   });
 };

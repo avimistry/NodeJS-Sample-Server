@@ -1,6 +1,6 @@
 var authUser = require('../../models/authentication.model'),
     jwt      = require('jsonwebtoken'),
-    config   = require('../../../config')
+    config   = require('../../config')
 
 module.exports = function(req, res, next) {
 
