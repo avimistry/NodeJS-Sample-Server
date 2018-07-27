@@ -1,6 +1,8 @@
 # NodeJS-Sample-Server
 Simple Backend server based on NodeJS and MongoDB using docker
 
+NodeJS will run on port 8080
+
 Contain Simple APIs
 1) User Login (POST /login)
 2) User Register (POST /user)
