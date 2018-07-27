@@ -13,7 +13,7 @@ module.exports = function(app) {
     .get(jwtAuth,userController.list);
 
   app.route('/user')
-    .post(jwtAuth,userController.create);
+    .post(userController.create);
 
   app.route('/user/:id')
     .get(jwtAuth,userController.read);
