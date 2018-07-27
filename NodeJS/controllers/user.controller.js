@@ -5,6 +5,7 @@ var User          = require('../models/user.model'),
     config        = require('../config'),
     errorTrans    = require('../utility/errorTranslator'),
     mailer        = require('../utility/mailer'),
+    utility       = require('../utility/utility'),
     _               = require('lodash')
 
 /**
